@@ -43,3 +43,61 @@ worklog-app/
 │   └─ detail.html      # 詳細画面
 ├─ .gitignore           # Git 管理除外設定
 └─ README.md
+🚀 起動方法
+1. ライブラリのインストール
+bash
+コードをコピーする
+pip install fastapi uvicorn jinja2
+2. アプリ起動
+bash
+コードをコピーする
+uvicorn main:app --reload
+3. ブラウザでアクセス
+cpp
+コードをコピーする
+http://127.0.0.1:8000/
+※ SQLite の DB ファイルは起動時に自動生成されます。
+
+🧠 学習ポイント
+本アプリを通じて、以下の点を重点的に学習しました。
+
+FastAPI による Web アプリの基本構成
+
+GET / POST を分けたルーティング設計
+
+PRG パターン（POST → Redirect → GET）の実装
+
+SQLite を用いた永続化処理
+
+CRUD（Create / Read / Delete）の考え方
+
+.gitignore を用いた GitHub 運用の基本
+
+💡 補足
+データベースファイル（.db）は GitHub には含めていません
+
+実務での拡張を想定し、構造はシンプルに保っています
+
+📈 今後の改善予定
+編集機能（UPDATE）の追加
+
+ユーザー認証機能の実装
+
+フォルダ構成の分割（router / service / db）
+
+クラウドへのデプロイ
+
+👤 Author
+Shoma Yoshida
+
+yaml
+コードをコピーする
+
+---
+
+### 次にやること（30秒）
+
+```powershell
+git add README.md
+git commit -m "Update README for portfolio"
+git push
