@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>作業ログ編集</title>
+</head>
+<body>
+
+  <h1>✏ 作業ログ編集</h1>
+
+  <form action="/edit" method="post">
+    <input type="hidden" name="log_id" value="{{ log[0] }}">
+
+    <div>
+      <label>内容</label><br>
+      <input type="text" name="task" value="{{ log[2] }}" required>
+    </div>
+
+    <button type="submit">更新</button>
+  </form>
+
+  <a href="/">一覧に戻る</a>
+
+</body>
+</html>

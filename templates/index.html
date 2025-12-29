@@ -40,10 +40,17 @@
         </span>
 
         <div>
-          <a href="/detail/{{ log[0] }}" class="btn btn-sm btn-outline-primary">
+          <!-- ★ 追加：編集ボタン -->
+          <a href="/edit/{{ log[0] }}" class="btn btn-sm btn-outline-secondary me-1">
+            編集
+          </a>
+
+          <!-- 詳細 -->
+          <a href="/detail/{{ log[0] }}" class="btn btn-sm btn-outline-primary me-1">
             詳細
           </a>
 
+          <!-- 削除 -->
           <form action="/delete" method="post" class="d-inline">
             <input type="hidden" name="log_id" value="{{ log[0] }}">
             <button class="btn btn-sm btn-outline-danger">
